@@ -1,6 +1,6 @@
 name: jobs examples
 on:
-    push
+    workflow_dispatch
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -12,6 +12,6 @@ jobs:
         needs: build
         steps:
             - name: step do job2
-              run: echo Hello, world! deploy
+              run: echo Hello, world! deploy.
                 
                 
