@@ -1,16 +1,14 @@
 name: jobs examples
 on:
     push
-
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
             - name: step do job build
               run: echo Hello, world! build.
-              
     deploy:
-        runs-on: ubuntu-lates
+        runs-on: ubuntu-latest
         needs: build
         steps:
             - name: step do deploy
