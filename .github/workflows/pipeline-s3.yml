@@ -1,4 +1,4 @@
-name: pipeline-deploy-s3 (atualizado)
+name: pipeline-deploy-s3
 
 on:
   workflow_dispatch
